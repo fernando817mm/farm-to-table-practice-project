@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     max-width: 100;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 
 /*General Styles*/
@@ -38,7 +38,7 @@ h3{
     font-size: 2.5rem;
 }
 
-section, footer{
+section{
     padding: 4% 0;
 }
 
@@ -63,7 +63,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 6vh;
 }
 
 .nav-links{
@@ -83,12 +83,16 @@ header nav{
     color: #4f4f4f;
 }
 
+.nav-links a:hover{
+    color: #fcb131;
+}
+
 /*top section styles*/
 
 #top{
     height: 85vh;
     background-image: url('../images/header.jpg');
-    margin-top: 10vh;
+    margin-top: 6vh;
     background-size: cover; /*fills the element*/
     background-repeat: no-repeat; /*dont tile the image*/
     background-position: center top;
@@ -145,4 +149,151 @@ header nav{
 
 .text p{
     text-align: left;
+}
+
+/*gallery section styles*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery div{
+    width: 40%;
+    height: 40vh;
+    margin: 4% 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery div .hide{
+    height: 5vh;
+    background-color: #fff;
+    display: none;
+}
+
+.gallery div:hover .hide{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.farm{
+    background-image: url('../images/barn.jpg');
+}
+
+.cook{
+    background-image: url('../images/cook.jpg');
+}
+
+.produce{
+    background-image: url('../images/produce.jpg');
+}
+
+.animals{
+    background-image: url('../images/sheep.jpg');
+}
+
+/*contact section styles*/
+
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact h2{
+    width: 100%;
+}
+
+.left, .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.contact-info{
+    width: 35%;
+    line-height: 2;
+}
+
+.contact-info h3{
+    text-align: left;
+}
+
+#contact .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .img-container img{
+    width: 70%;
+}
+
+/*footer section styles*/
+
+footer{
+    background-color: #fcb131;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2% 0;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer a:hover{
+    color: #4f4f4f;
+}
+
+footer div{
+    width: 27%;
+}
+
+.social-nav{
+    margin-top: 10%;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-links li{
+    list-style: none;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links li{
+    list-style: none;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
