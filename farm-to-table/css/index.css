@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100;
+    border: 1px solid grey;
+}
+
+/*General Styles*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #FFFAFA;
+}
+
+h1, h2, h3, h4{
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+section, footer{
+    padding: 4% 0;
+}
+
+a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #4f4f4f;
+    font-family: 'PT Sans', sans-serif;
+}
+
+i{
+    font-size: 5rem;
+}
+
+/*header section styles*/
+
+header nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #4f4f4f;
+}
+
+/*top section styles*/
+
+#top{
+    height: 85vh;
+    background-image: url('../images/header.jpg');
+    margin-top: 10vh;
+    background-size: cover; /*fills the element*/
+    background-repeat: no-repeat; /*dont tile the image*/
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*farm section styles*/
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.box{
+    width: 20%;
+    border: 3px solid #4f4f4f;
+    text-align: center;
+    padding: 4%;
+    background-color: #fff;
+}
+
+.box h3{
+    margin: 15% 0;
+}
+
+/*blank section styles*/
+
+.hero-image{
+    height: 40vh;
+    background-image: url(../images/dirt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*about section styles*/
+
+#about{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    width: 60%;
+    border: 3px solid #4f4f4f;
+    padding: 4%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.text p{
+    text-align: left;
+}
